@@ -27,7 +27,7 @@ public class PaintProduct : IBuyable
     public decimal GetFinalPrice()
         {
             decimal discountPrice = Price * (1-DefaultDiscount);
-            decimal finalPrice = discountedPrice * (1 + TaxRate);
+            decimal finalPrice = discountPrice * (1 + TaxRate);
             return finalPrice;
         }
     
